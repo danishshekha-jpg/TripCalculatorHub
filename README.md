@@ -1,2 +1,1 @@
-# TripCalculatorHub
-Smart travel tools – fuel cost calculator, distance finder, itinerary planner, and more.
+# TripCalculatorHub (Starter)\nStarter static site with 20 scaffolded tools and one advanced Fuel Cost Calculator.\n\nDeploy to GitHub Pages (main branch, root) or Netlify/Vercel.\n\n© 2025 TripCalculatorHub\n
