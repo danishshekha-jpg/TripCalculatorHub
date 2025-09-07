@@ -1,1 +1,35 @@
-body { font-family: Arial, sans-serif; }
+.tool-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.calculator-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calculator-box input, .calculator-box button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.calculator-box button {
+  background: #0a2540;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f9ff;
+  border-left: 4px solid #0077b6;
+}

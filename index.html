@@ -1,1 +1,66 @@
-<!DOCTYPE html><html><head><title>TripCalculatorHub</title></head><body>Homepage</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Cost Calculator | TripCalculatorHub</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🌍 TripCalculatorHub</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="./fuel-calculator.html">Fuel Calculator</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="tool-page">
+    <h1>Fuel Cost Calculator</h1>
+    <p>Estimate your fuel cost for any road trip based on distance, mileage, and fuel price.</p>
+
+    <div class="calculator-box">
+      <label>Distance (km):</label>
+      <input type="number" id="distance" placeholder="Enter distance in km">
+
+      <label>Fuel Efficiency (km per litre):</label>
+      <input type="number" id="efficiency" placeholder="e.g. 15">
+
+      <label>Fuel Price (per litre):</label>
+      <input type="number" id="price" placeholder="e.g. 250">
+
+      <button onclick="calculateFuelCost()">Calculate</button>
+    </div>
+
+    <div id="result-box" class="result-box"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 TripCalculatorHub</p>
+  </footer>
+
+  <script>
+    function calculateFuelCost() {
+      const distance = document.getElementById("distance").value;
+      const efficiency = document.getElementById("efficiency").value;
+      const price = document.getElementById("price").value;
+
+      if (!distance || !efficiency || !price) {
+        document.getElementById("result-box").innerHTML = "<p style='color:red'>⚠️ Please fill all fields.</p>";
+        return;
+      }
+
+      const litresNeeded = distance / efficiency;
+      const totalCost = litresNeeded * price;
+
+      document.getElementById("result-box").innerHTML = `
+        <h3>Result:</h3>
+        <p>Total Fuel Needed: <strong>${litresNeeded.toFixed(2)} litres</strong></p>
+        <p>Estimated Cost: <strong>Rs. ${totalCost.toFixed(2)}</strong></p>
+      `;
+    }
+  </script>
+</body>
+</html>
