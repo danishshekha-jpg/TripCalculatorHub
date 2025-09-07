@@ -1,35 +1,5 @@
-.tool-page {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.calculator-box {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.calculator-box input, .calculator-box button {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.calculator-box button {
-  background: #0a2540;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.result-box {
-  margin-top: 20px;
-  padding: 15px;
-  background: #f0f9ff;
-  border-left: 4px solid #0077b6;
-}
+body { margin:0; font-family:sans-serif; text-align:center; background:#f3f4f6; }
+.site-header { background:#1f2937; color:white; padding:1rem;}
+.site-header nav a { color:white; margin: 0 0.5rem; text-decoration:none; }
+.hero { padding:3rem; background:#3b82f6; color:white; }
+.site-footer { padding:1rem; background:#1f2937; color:white; position:fixed; bottom:0; width:100%;}
