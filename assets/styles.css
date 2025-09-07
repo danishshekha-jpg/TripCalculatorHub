@@ -1,5 +1,26 @@
-body { margin:0; font-family:sans-serif; text-align:center; background:#f3f4f6; }
-.site-header { background:#1f2937; color:white; padding:1rem;}
-.site-header nav a { color:white; margin: 0 0.5rem; text-decoration:none; }
-.hero { padding:3rem; background:#3b82f6; color:white; }
-.site-footer { padding:1rem; background:#1f2937; color:white; position:fixed; bottom:0; width:100%;}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background: #f3f4f6;
+}
+.site-header {
+  background: #1f2937;
+  color: white;
+  padding: 1rem;
+}
+.site-header nav a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.hero {
+  padding: 3rem;
+  background: #3b82f6;
+  color: white;
+}
+.site-footer {
+  padding: 1rem;
+  background: #1f2937;
+  color: white;
+}
